@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Single Page Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/css3.css">
+    <link rel="stylesheet" href="css/css4.css">
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/css2.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<main>
+
+
+    <div class="page active" id="home">
+        <div class="img11">
+
+            <img class="img2" style="width: 100%;height: 80px;position: fixed;" src="asserts/startSignIn2.png">
+            <img class="img1" src="asserts/Captures.PNG"style="">
+
+
+            <div class="container">
+                <nav class="desk" style="position: fixed;">
+                    <ul>
+                        <li><a href="#" id="q1" data-target="home" class="nav-link">HOME</a></li>
+                        <li><a href="#"id="q2" data-target="customers" class="nav-link">customers</a></li>
+                        <li><a href="#" id ="q3"data-target="items" class="nav-link">items</a></li>
+                        <li><a href="#" id="q4" data-target="orders" class="nav-link">orders</a></li>
+                        <li><a href="https://ijse-pos2.000webhostapp.com/">Profile</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="header">
+                </div>
+
+            </div>
+        </div>
+        <div class="fk" style="top: -100px;position: relative;">
+
+
+                <div id="topic1">
+                    <p id="pq">Dashboard</p>
+
+                    <div id="btcon-1">
+                        <a href="#">
+                            <button type="button" class="btn btn-primary" id="bt1" data-toggle="button" aria-pressed="false"
+                                    autocomplete="off">
+                                Sales Dashboard
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="btn btn-success" id="bt2" data-toggle="button" aria-pressed="false"
+                                    autocomplete="off">
+                                Weekly Targets
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <input type="date" id="date">
+
+
+            <div class="container-fluid" id="main2" style="margin-bottom: 980px;top: 100px;position: relative;padding: 30px;">
+                <div class="row" style=" height: 400px;position: relative" >
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="border: 2px solid white;background-color: #f5f5f5;">
+                        <p class="p1"><span>Net Sales</span></p>
+                        <p class="p2">Sales Total <span id="p3">Tips</span></p>
+                        <p id="p4">$24,986.50 <span id="p5">$897.25</span></p>
+                        <p id="p6">Gratuities</p>
+                        <p id="p7">$811.20</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="background-color: #f5f5f5;border: 2px solid white; ">
+                        <p class="p1">Average Spned</p>
+                        <p class="p2">Per Seat</p>
+                        <p id="p8">$20.70</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4" style=" background-color:  #f5f5f5;border: 2px solid white;">
+                        <p class="p1">Customers</p>
+                        <p class="p2">Parties<span id="p9">Bills</span><span id="p10">Seats</span></p>
+                        <p id="p11">323 <span id="p12">363</span><span id="p13">1800</span></p></div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="background-color:  #f5f5f5;border: 2px solid white;">
+
+                        <p class="p8">Top Sales Categories</p>
+
+                        <div class="progress" style="margin-top: 30px;margin-bottom: 20px;height: 20px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 16%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">16%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 8%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">8%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 0px">
+                            <div class="progress-bar" role="progressbar" style="width: 6%; font-weight: bold" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100">6%</div>
+                        </div>
+                        <p class="p7">Sales Category<span class="p14">Total</span></p>
+                        <p class="p3"><span class="p19">■ </span> Food<span class="p15">$18,356.50</span></p>
+                        <p class="p3"><span class="p20">■ </span> Alcohol<span class="p16">$4,272.30</span></p>
+                        <p class="p3"><span class="p21">■ </span> Merchandies<span class="p17">$2,136.60</span></p>
+                        <p class="p4"><span class="p22">■ </span> Gifts Cards<span class="p18">$1,602.43</span></p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="background-color:  #f5f5f5;border: 2px solid white;">
+
+                        <p class="p8">Top Shifts</p>
+
+                        <div class="progress" style="margin-top: 30px;margin-bottom: 20px;height: 20px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">51.51 hrs.</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 64%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">46.53 hrs.</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 53%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">38.33 hrs.</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar" role="progressbar" style="width: 50%; font-weight: bold" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100">33.33 hrs.</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: -15px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 43%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25.23 hrs.</div>
+                        </div>
+                        <p class="p7">Waiter Name<span class="p14">Net Sales</span></p>
+                        <p class="p3"><span class="p19">■ </span> June L.<span class="p9">$6,655.50</span></p>
+                        <p class="p3"><span class="p20">■ </span> Mary K.<span class="p10">$5,232.40</span></p>
+                        <p class="p3"><span class="p21">■ </span> Nymi P.<span class="p11">$8,636.60</span></p>
+                        <p class="p3"><span class="p22">■ </span> Sally C.<span class="p12">$4,352.43</span></p>
+                        <p class="p4"><span class="p23">■ </span> Peter C.<span class="p13">$5,502.43</span></p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="background-color:  #f5f5f5;border: 2px solid white;">
+
+                        <p class="p8">Tender Types</p>
+
+                        <div class="progress" style="margin-top: 30px;margin-bottom: 20px;height: 20px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 42%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">42%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 33%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">33%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 14%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">14%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 0px">
+                            <div class="progress-bar" role="progressbar" style="width: 9%; font-weight: bold" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100">9%</div>
+                        </div>
+
+                        <p class="p7">Payment Type<span class="p14">Total</span></p>
+                        <p class="p3"><span class="p19">■ </span> Cash<span class="p24">$6,655.50</span></p>
+                        <p class="p3"><span class="p20">■ </span> Credit<span class="p25">$5,232.40</span></p>
+                        <p class="p3"><span class="p21">■ </span> Master<span class="p26">$8,636.60</span></p>
+                        <p class="p3"><span class="p22">■ </span> Visa<span class="p27">$4,352.43</span></p>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="background-color:  #f5f5f5;border: 2px solid white;">
+
+                        <p class="p8">Top Menu Categories</p>
+
+                        <div class="progress" style="margin-top: 30px;margin-bottom: 20px;height: 20px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 58%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">58%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 26%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">22%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 10%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 0px">
+                            <div class="progress-bar" role="progressbar" style="width: 9%; font-weight: bold" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100">9%</div>
+                        </div>
+
+                        <p class="p7">Menu Category<span class="p14">Total</span></p>
+                        <p class="p3"><span class="p19">■ </span> Mains<span class="p24" style="left: 33%">$16,655.50</span></p>
+                        <p class="p3"><span class="p20">■ </span> Appetizers<span class="p25"style="left: 26.5%">$12,232.40</span></p>
+                        <p class="p3"><span class="p21">■ </span> Beer<span class="p26"style="left: 34%">$6,636.60</span></p>
+                        <p class="p3"><span class="p22">■ </span> Wine<span class="p27"style="left: 34%">$11,352.43</span></p>
+
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="background-color:  #f5f5f5;border: 2px solid white;">
+
+                        <p class="p8">Top Discounts & Voids</p>
+
+                        <div class="progress" style="margin-top: 30px;margin-bottom: 20px;height: 20px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 49%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">49%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 21%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">21%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 16%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">16%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: 20px">
+                            <div class="progress-bar" role="progressbar" style="width: 10%; font-weight: bold" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </div>
+                        <div class="progress" style="margin-top: 10px;margin-bottom: -15px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 4%; font-weight: bold"
+                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">4%</div>
+                        </div>
+                        <p class="p7">Discription<span class="p14" style="left: 35%">Total</span></p>
+                        <p class="p3"><span class="p19">■ </span> GK App<span class="p9">$1,655.50</span></p>
+                        <p class="p3"><span class="p20">■ </span> Mistake.<span class="p10">$632.40</span></p>
+                        <p class="p3"><span class="p21">■ </span> Wrong Table<span class="p11" style="left: 29%">$436.60</span></p>
+                        <p class="p3"><span class="p22">■ </span> VIP<span class="p12" style="left: 41%">$352.43</span></p>
+                        <p class="p4"><span class="p23">■ </span> Comp<span class="p13" style="left:38%">$82.43</span></p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4" style="border: 2px solid white;background-color: #f5f5f5;">
+                        <p class="p1"><span>Top Menu Items</span></p>
+                        <p class="p2"> Menu Item <span class="p28">Total</span></p>
+                        <p class="p29"> Bacon Burger <span class="p30" style="left: 28%;">$3961.54</span></p>
+                        <p class="p29"> Pulled Pork <span class="p30"style="left: 31.5%;">$3676.21</span></p>
+                        <p class="p29"> Pasta and Clams <span class="p30"style="left: 24%;">$3032.43</span></p>
+                        <p class="p29"> Steak <span class="p30">$2157.00</span></p>
+                        <p class="p29"> Basic Burger <span class="p30"style="left: 30%;">$1435.65</span></p>
+                        <p class="p29"> House Red <span class="p30"style="left: 32%;">$1026.75</span></p>
+                        <p class="p29"> Cheese Steak <span class="p30"style="left: 28.5%;">$759.30</span></p>
+                        <p class="p29" style="margin-bottom: 50px;"> Rew Raw Rice <span class="p30"style="left: 28%;">$456.09</span></p>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <footer class="ft-1">
+
+                <ul id="ulicon" style="">
+                    <ol><a href="https://github.com/rivinduchamath" class="fa fa-github" id="te1" aria-hidden="true"></a>
+                    </ol>
+                    <ol><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_sign-in-submit"
+                           class="fa fa-linkedin" id="te2" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-twitter" id="te3" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-facebook" id="te4" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-codepen" id="te5" aria-hidden="true"></a></ol>
+
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+
+
+<!--//////////////////////////////////customers//////////////////////////////////////////////////////////-->
+
+
+
+    <div class="page" id="customers">
+        <div class="img11">
+
+            <img class="img2" style="width: 100%;height: 80px;position: fixed" src="asserts/startSignIn2.png">
+            <img class="img1" src="asserts/Captures.PNG">
+
+
+            <div class="container">
+                <nav class="desk" style="position: fixed;">
+                    <ul>
+                        <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                        <li><a href="#" data-target="customers" class="nav-link">customers</a></li>
+                        <li><a href="#" data-target="items" class="nav-link">items</a></li>
+                        <li><a href="#" data-target="orders" class="nav-link">orders</a></li>
+                        <li><a href="https://ijse-pos2.000webhostapp.com/">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <main id="mai8">
+
+            <div class="container-fluid">
+                <div class="row" style="margin-bottom: 90px;margin-top: -270px; height: 500px">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center; background-color:  #f5f5f5;border: 2px solid white;height: 100px;display: inline;">
+                        <p class="cus-2">Search Customer >></p>
+                        <input class="cus-1" type="text"placeholder=" Customer ID">
+                        <a href="#"><button class="d1">Search</button></a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id ="dd8">
+                        <input class="x1" id="x18" placeholder=" Customer Id" type="text">
+                        <input class="x1" id="x28" placeholder=" Customer Name" type="text">
+                        <input class="x1" id="x38" placeholder=" Customer Address" type="text">
+                        <input class="x1" id="x48" placeholder=" Customer Tel" type="text">
+                        <input class="x1" id="x58" placeholder=" Customer email" type="text">
+
+                        <hr id="h48">
+
+                        <div class="btn-group btn-group-toggle" id="x68" data-toggle="buttons">
+                            <label class="btn btn-primary active3">
+                                <input type="radio" name="options" id="option18" autocomplete="off" checked> New Customer
+                            </label>
+                            <label class="btn btn-success">
+                                <input type="radio" name="options" id="option28" class="ew" autocomplete="off"> Edit
+                            </label>
+                            <label class="btn btn-warning">
+                                <input type="radio" name="options" id="option8" autocomplete="off"> Clear
+                            </label>
+                            <label class="btn btn-info"id="o8">
+                                <input type="radio" name="options" autocomplete="off"> Table
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option38" autocomplete="off"> Delete
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;background-color:  #f5f5f5;border: 2px solid white;float: left;right:0;display: inline;position: relative">
+                        <table class="content-table">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Tel</th>
+                                <th class="da">Email</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr  class="active-row">
+                                <td>C001</td>
+                                <td>Nimal</td>
+                                <td>Galle</td>
+                                <td>0352261</td>
+                                <td class="da">N@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>C002</td>
+                                <td>Kamal</td>
+                                <td>Galle</td>
+                                <td>07261</td>
+                                <td  class="da"> k@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>C003</td>
+                                <td>Amal</td>
+                                <td>Kandy</td>
+                                <td>077261</td>
+                                <td  class="da"> a@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>C004</td>
+                                <td>Vimal</td>
+                                <td>Galle</td>
+                                <td>077877</td>
+                                <td  class="da">dkv@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="ft-1">
+
+                <ul class="ulicon0">
+                    <ol><a href="https://github.com/rivinduchamath" class="fa fa-github" id="te18" aria-hidden="true"></a>
+                    </ol>
+                    <ol><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_sign-in-submit"
+                           class="fa fa-linkedin" id="te28" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-twitter" id="te38" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-facebook" id="te48" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-codepen" id="te58" aria-hidden="true"></a></ol>
+
+                </ul>
+            </footer>
+        </main>
+    </div>
+
+<!--///////////////////////////////////////////////////////////////////////items///////////////////////////////////////////////-->
+
+
+
+
+    <div class="page" id="items">
+        <div class="img11">
+
+            <img class="img2" style="width: 100%;height: 80px;position: fixed" src="asserts/startSignIn2.png">
+            <img class="img1" src="asserts/Captures.PNG">
+
+
+            <div class="container">
+                <nav class="desk" style="position: fixed;">
+                    <ul>
+                        <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                        <li><a href="#" data-target="customers" class="nav-link">customers</a></li>
+                        <li><a href="#" data-target="items" class="nav-link">items</a></li>
+                        <li><a href="#" data-target="orders" class="nav-link">orders</a></li>
+                        <li><a href="https://ijse-pos2.000webhostapp.com/">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <main class="maini">
+
+            <div class="container-fluid">
+                <div class="row" style="margin-bottom: 50px;margin-top: -270px; height: 500px">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center; background-color:  #f5f5f5;border: 2px solid white;height: 100px;display: inline;">
+                        <p class="cus-2">Search Item >></p>
+                        <input class="cus-1" type="text"placeholder=" Item Number">
+                        <a href="#"><button class="d1">Search</button></a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id ="dd">
+                        <input class="x1" id="x1" placeholder=" Item Number" type="text">
+                        <input class="x1" id="x2" placeholder=" Item Name" type="text">
+                        <input class="x1" id="x3" placeholder=" Qty On Hand" type="text">
+                        <input class="x1" id="x4" placeholder=" Price" type="text">
+                        <input class="x1" id="x5" placeholder=" Exp.Date" type="text">
+                        <hr id="h1">
+                        <div class="btn-group btn-group-toggle" id="x6" data-toggle="buttons">
+                            <label class="btn btn-primary active1">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> New Item
+                            </label>
+                            <label class="btn btn-success">
+                                <input type="radio" name="options" id="option2" class="ew" autocomplete="off"> Edit
+                            </label>
+                            <label class="btn btn-warning">
+                                <input type="radio" name="options" id="option" autocomplete="off"> Clear
+                            </label>
+                            <label class="btn btn-info"id="o">
+                                <input type="radio" name="options" autocomplete="off"> Table
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Delete
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;background-color:  #f5f5f5;border: 2px solid white;float: left;right:0;display: inline;position: relative">
+                        <table class="content-table">
+                            <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th class="da">Exp.</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr  class="active-row">
+                                <td>P001</td>
+                                <td>Samba</td>
+                                <td>120kg</td>
+                                <td>100(1kg)</td>
+                                <td class="da">07/07/20</td>
+                            </tr>
+                            <tr>
+                                <td>P002</td>
+                                <td>Samon</td>
+                                <td>70</td>
+                                <td>170</td>
+                                <td  class="da"> 20/12/19</td>
+                            </tr>
+                            <tr>
+                                <td>P003</td>
+                                <td>Dal</td>
+                                <td>100kg</td>
+                                <td>90(1kg)</td>
+                                <td  class="da"> 01/02/20</td>
+                            </tr>
+                            <tr>
+                                <td>P004</td>
+                                <td>F.Milk</td>
+                                <td>20</td>
+                                <td>250(1L)</td>
+                                <td  class="da">09/09/19</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="ft-1">
+
+                <ul id="ulicon5">
+                    <ol><a href="https://github.com/rivinduchamath" class="fa fa-github" id="te15" aria-hidden="true"></a>
+                    </ol>
+                    <ol><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_sign-in-submit"
+                           class="fa fa-linkedin" id="te25" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-twitter" id="te35" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-facebook" id="te45" aria-hidden="true"></a></ol>
+                    <ol><a href="#" class="fa fa-codepen" id="te55" aria-hidden="true"></a></ol>
+
+                </ul>
+            </footer>
+        </main>
+
+    </div>
+
+
+<!--//////////////////////////////////////////////////orders///////////////////////////////////////////////////////-->
+
+
+
+    <div class="page" id="orders">
+        <div class="img11">
+
+            <img class="img2" style="width: 100%;height: 80px;position: fixed" src="asserts/startSignIn2.png">
+            <img class="img1" src="asserts/Captures.PNG">
+
+
+            <div class="container">
+                <nav class="desk" style="position: fixed;">
+                    <ul>
+                        <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                        <li><a href="#" data-target="customers" class="nav-link">customers</a></li>
+                        <li><a href="#" data-target="items" class="nav-link">items</a></li>
+                        <li><a href="#" data-target="orders" class="nav-link">orders</a></li>
+                        <li><a href="https://ijse-pos2.000webhostapp.com/">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <main id="mai" style="margin-top: 80px;">
+            <div class="containe">
+                <div class="d11">
+                    <div class="cus"><p class="cush1">Customer Details</p></div>
+                    <input type="text" placeholder=" Customer Id"class="cus1">
+                    <input type="text" placeholder=" Customer Address"class="cus3">
+                    <input type="text" placeholder=" Credit Limit" style="display: inline;" class="cus4">
+                    <input type="text" placeholder=" Tel" style="display: inline;" class="cus5">
+
+                </div>
+                <div class="d22">
+
+                    <div class="cus"><p class="cush1">Invoice Details</p></div>
+                    <input type="date" placeholder=" "class="cus1">
+                    <input type="text" placeholder=" Order Id"class="cus3">
+
+                </div>
+                <div class="d3">
+                    <div class="cus"><p class="cush1">Item Select</p></div>
+                    <input type="text" placeholder=" Item"class="cus1">
+                    <input type="text" placeholder=" Price"class="cus3">
+                    <input type="text" placeholder=" Qty On Hand"class="cus3">
+                    <input type="text" placeholder=" Order Qty" style="display: inline;" class="cus4">
+                    <input type="text" placeholder=" Credit Limit" style="display: inline;" class="cus5">
+
+
+                </div>
+                <div class="d4">
+
+                    <div class="cus"><p class="cush1">Price</p></div>
+                    <input type="text" placeholder=" Cash"class="cus1">
+                    <input type="text" placeholder=" Balence"class="cus3">
+                    <input type="text" placeholder=" Discount"class="cus3">
+                    <a><button class="bt1">Clear</button></a>
+                    <a><button class="bt2">Re-new Order</button></a>
+                    <a><button class="bt3">Submit</button></a>
+
+                </div>
+                <table class="content-table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Tel</th>
+                        <th class="da">Email</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr  class="active-row">
+                        <td>C001</td>
+                        <td>Nimal</td>
+                        <td>Galle</td>
+                        <td>0352261</td>
+                        <td class="da">N@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Kamal</td>
+                        <td>Galle</td>
+                        <td>07261</td>
+                        <td  class="da"> k@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Amal</td>
+                        <td>Kandy</td>
+                        <td>077261</td>
+                        <td  class="da"> a@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>Vimal</td>
+                        <td>Galle</td>
+                        <td>077877</td>
+                        <td  class="da">dkv@gmail.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <footer>
+                <div class="ft-1">
+                    <ul id="ulicon1">
+                        <ol><a href="https://github.com/rivinduchamath" class="fa fa-github" id="te11" aria-hidden="true"></a>
+                        </ol>
+                        <ol><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_sign-in-submit"
+                               class="fa fa-linkedin" id="te21" aria-hidden="true"></a></ol>
+                        <ol><a href="#" class="fa fa-twitter" id="te31" aria-hidden="true"></a></ol>
+                        <ol><a href="#" class="fa fa-facebook" id="te41" aria-hidden="true"></a></ol>
+                        <ol><a href="#" class="fa fa-codepen" id="te51" aria-hidden="true"></a></ol>
+
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+</main>
+<script src="js/jqery.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
